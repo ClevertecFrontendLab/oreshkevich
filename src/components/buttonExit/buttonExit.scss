@@ -1,0 +1,28 @@
+.exit {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 11px 0;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 7px;
+    margin-left: 9px;
+}
+@media (max-width: 834px) {
+    .exit {
+        white-space: initial;
+    }
+}
+.img {
+    aspect-ratio: 1;
+    object-fit: auto;
+    object-position: center;
+    width: 16px;
+    fill: var(--Neutral-gray-1, #fff);
+    align-self: start;
+}
+.exit__text {
+    font-family: Inter, sans-serif;
+    flex-grow: 1;
+    flex-basis: auto;
+}
