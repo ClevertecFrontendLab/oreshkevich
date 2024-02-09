@@ -1,1 +1,0 @@
-export { CardMain } from './card';

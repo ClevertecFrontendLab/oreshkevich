@@ -2,15 +2,15 @@
     justify-content: space-between;
     align-items: end;
     display: flex;
-    margin-top: 24px;
+    margin-top: 8px;
     gap: 20px;
-    padding: 50px 32px 50px 32px;
+    padding: 0px 32px 50px 32px;
 }
-@media (max-width: 991px) {
+@media (max-width: 834px) {
     .footer {
         max-width: 100%;
         flex-wrap: wrap;
-        padding: 0 20px;
+        margin-top: 151px;
     }
 }
 .footer__feedback {
@@ -18,7 +18,7 @@
     font: 400 16px/130% Inter, sans-serif;
     margin-bottom: 10px;
 }
-@media (max-width: 991px) {
+@media (max-width: 834px) {
     .footer__feedback {
         margin-top: 40px;
     }
@@ -32,7 +32,7 @@
     flex-direction: column;
     width: 240px;
 }
-@media (max-width: 991px) {
+@media (max-width: 834px) {
     .footer__card {
         margin-top: 40px;
     }
@@ -45,17 +45,16 @@
     line-height: 130%;
     padding: 12px 24px;
 }
-@media (max-width: 991px) {
+@media (max-width: 834px) {
     .footer__card-wrap {
         white-space: initial;
-        padding: 0 20px;
     }
 }
 .footer__card-item {
     color: #2f54eb;
     font: 16px Inter, sans-serif;
 }
-@media (max-width: 991px) {
+@media (max-width: 834px) {
     .footer__card-item {
         white-space: initial;
     }
@@ -65,7 +64,7 @@
     margin-top: 8px;
     font: 14px Inter, sans-serif;
 }
-@media (max-width: 991px) {
+@media (max-width: 834px) {
     .footer__card-text {
         white-space: initial;
     }
@@ -107,15 +106,36 @@
     white-space: nowrap;
     font: 400 14px/130% Inter, sans-serif;
 }
-@media (max-width: 991px) {
+@media (max-width: 834px) {
     .footer__card-name {
         white-space: initial;
     }
 }
 
 .img-13 {
-    aspect-ratio: 1;
     object-fit: auto;
     object-position: center;
     width: 100%;
+}
+@media (max-width: 558px) {
+    .footer {
+        flex-direction: column-reverse;
+        margin-top: 0;
+    }
+}
+@media (max-width: 714px) {
+    .footer {
+        flex-direction: column-reverse;
+        margin-top: 24px;
+        padding: 0px 13px 40px 21px;
+        text-align: center;
+        align-items: center;
+    }
+    .footer__card {
+        margin-top: 0;
+        width: 100%;
+    }
+    .footer__feedback {
+        margin-top: 14px;
+    }
 }

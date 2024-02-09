@@ -1,51 +1,40 @@
-.card {
+.card-information {
     border-radius: 2px;
     background-color: #fff;
     display: flex;
     flex-grow: 1;
-    padding-top: 12px;
     flex-direction: column;
-    width: 98%;
+    padding: 12px 12px 1px 12px;
+    width: 210px;
 }
-@media (max-width: 991px) {
-    .card {
-        margin-top: 16px;
+@media (max-width: 834px) {
+    .card-information {
+        padding: 12px 12px 14px 12px;
     }
 }
-.card-2 {
+.card-information__title {
     color: #262626;
     align-self: center;
     white-space: nowrap;
     font: 400 16px/130% Inter;
 }
-@media (max-width: 991px) {
-    .card-2 {
+@media (max-width: 834px) {
+    .card-information__title {
         white-space: initial;
+        padding-left: 13px;
     }
 }
-.card-3 {
+.card-information__wrap {
     box-shadow: 0px 1px 0px 0px #f0f0f0 inset;
     background-color: #fff;
     display: flex;
     margin-top: 12px;
-    width: 100%;
-    flex-direction: column;
     justify-content: center;
-    padding: 12px 0;
+    align-items: center;
+    padding: 20px 40px 17px 55px;
 }
-.card-4 {
-    justify-content: space-between;
-    border-radius: 2px;
-    display: flex;
-    gap: 8px;
-    padding: 7px 68px;
-}
-@media (max-width: 991px) {
-    .card-4 {
-        padding: 0 20px;
-    }
-}
-.card-5 {
+
+.card-information__img {
     justify-content: center;
     align-items: center;
     background-color: rgba(255, 255, 255, 0);
@@ -59,9 +48,14 @@
     object-position: center;
     width: 100%;
 }
-.card-6 {
+.card-information__text {
     color: #2f54eb;
     text-align: center;
-    flex-grow: 1;
+    padding-left: 5px;
     font: 400 14px/130% Inter;
+}
+@media (max-width: 714px) {
+    .card-information {
+        padding: 9px 12px 9px 12px;
+    }
 }
